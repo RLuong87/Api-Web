@@ -3,7 +3,7 @@ import axios from "axios";
 
 const gitHubUrl = "https://api.github.com/users/RLuong87";
 
-const GitHubUser = () => {
+const GitHubData = () => {
     const [userData, setUserData] = useState({});
 
     // useEffect(() => {
@@ -40,4 +40,4 @@ const GitHubUser = () => {
     )
 }
 
-export default GitHubUser;
+export default GitHubData;

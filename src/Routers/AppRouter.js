@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import WeatherApi from "../components/Weather/WeatherApi"
-import GitHubUser from "../components/GitHubUserData/GitHubUser"
+import GitHubUser from "../components/GitHubUserData/GitHubData"
 import Home from "../components/Home/Home";
 import LoadList from "../components/GitHubUserData/LoadList";
+import RandomCatFact from "../components/Catfact/RandomCatFact";
 import Navbar from "../Navbar/Navbar";
 
 const AppRouter = () => {
@@ -15,6 +16,7 @@ const AppRouter = () => {
                 <Route path="/weather" element={<WeatherApi />} />
                 <Route path="/githubuser" element={<GitHubUser />} />
                 <Route path="/repo" element={<LoadList />} />
+                <Route path="catfact" element={<RandomCatFact /> } />
             </Routes>
         </div>
     )
