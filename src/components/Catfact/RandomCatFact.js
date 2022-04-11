@@ -12,7 +12,7 @@ function RandomCatFact() {
 
     const fetchFactAxios = () => {
         axios.get("https://catfact.ninja/fact").then((response) => {
-            setFact(response.data.fact)
+            setFact(response.data.fact);
         })
     }
 

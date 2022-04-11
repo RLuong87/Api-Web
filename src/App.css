@@ -9,6 +9,43 @@
   margin: 20px 15vw;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.WeatherApi {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  text-align: center;
+  padding: 25px;
+}
+
+footer {
+  padding: 2px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #EEEEEE;
+  font-size: small;
+  text-align: center;
+}
+
+header {
+  padding: 25px;
+}
+
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;

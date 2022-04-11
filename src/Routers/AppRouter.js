@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import WeatherApi from "../components/Weather/WeatherApi"
+import OpenWeather from "../components/Weather/OpenWeather"
 import GitHubUser from "../components/GitHubUserData/GitHubData"
 import Home from "../components/Home/Home";
 import LoadList from "../components/GitHubUserData/LoadList";
@@ -13,10 +13,10 @@ const AppRouter = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/weather" element={<WeatherApi />} />
+                <Route path="/weather" element={<OpenWeather />} />
                 <Route path="/githubuser" element={<GitHubUser />} />
                 <Route path="/repo" element={<LoadList />} />
-                <Route path="catfact" element={<RandomCatFact /> } />
+                <Route path="/catfact" element={<RandomCatFact /> } />
             </Routes>
         </div>
     )

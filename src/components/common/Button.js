@@ -24,12 +24,12 @@ const Button = (props) => {
 const styles = {
   button: {
     alignSelf: 'center',
-    backgroundColor: 'silver',
+    backgroundColor: 'black',
     marginLeft: 5,
     marginRight: 5,
     marginBottom: 10,
     marginTop: 5,
-    width: "50%",
+    width: "10%",
     borderRadius: 10,
     fontSize: 16,
     paddingTop: 5,
