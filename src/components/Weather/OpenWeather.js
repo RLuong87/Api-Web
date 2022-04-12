@@ -6,8 +6,8 @@ function OpenWeather() {
     const [query, setQuery] = useState('');
     const [weatherData, setWeather] = useState([{}]);
 
-    const search = evt => {
-        if (evt.key === "Enter") {
+    const search = e => {
+        if (e.key === "Enter") {
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&units=imperial&APPID=${apiKey}`)
                 .then(res => res.json())
                 .then(data => {
@@ -32,6 +32,7 @@ function OpenWeather() {
 
     return (
         <div className={(typeof weatherData.main != "undefined") ? ((weatherData.main.temp > 79) ? "app warm" : "app") : "app"}>
+            <div className="welcome">Welcome, enter a city to get the latest weather report</div>
             <main>
                 <div className="search-box">
                     <input

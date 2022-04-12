@@ -6,17 +6,14 @@ const Home = () => {
 
   return (
     <Container >
-        <Splash image={splashImg} style={{
-          color: "#f1f1f1",
-          height: "120vh",
-        }}>
-          <h1 style={{ textShadow: '1px 1px black' }}>
-            API WEB
-          </h1>
-          <h2 style={{ textShadow: '1px 1px black' }}>
-            We pull APIs!
-          </h2>
-        </Splash>
+      <Splash image={splashImg} style={{
+        color: "#f1f1f1",
+        height: "120vh",
+      }}>
+        <div className='message'>
+          <h2>Welcome, we pull APIs!</h2>
+        </div>
+      </Splash>
     </Container>
   )
 }

@@ -20,14 +20,15 @@ const Navbar = (props) => {
                     fontFamily: "georgia",
                     fontWeight: "bold",
                     fontSize: "2.5em",
-                    margin: "0 20px"
+                    margin: "0 20px",
+                    textAlign: "left"
                 }}>API WEB</h1>
                 <div style={{
                     margin: "0 20px",
                     flexDirection: "row",
                     background: "transparent",
                     userSelect: "none",
-                    alignItems: "center",
+                    textAlign: "right",
                 }}>
                     <NavButton to="/" label="Home " />
                     <NavButton to="/weather" label="Weather" />
