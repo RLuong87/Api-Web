@@ -27,11 +27,11 @@ const GitHubData = () => {
         getGitHubUserWithAxios();
     })
 
-    const getGitHubUserWithFetch = async () => {
-        const response = await fetch(gitHubUrl);
-        const jsonData = await response.json();
-        setData(jsonData);
-    };
+    // const getGitHubUserWithFetch = async () => {
+    //     const response = await fetch(gitHubUrl);
+    //     const jsonData = await response.json();
+    //     setData(jsonData);
+    // };
 
     const getGitHubUserWithAxios = async () => {
         const response = await axios.get(gitHubUrl);
