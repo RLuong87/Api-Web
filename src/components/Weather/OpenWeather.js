@@ -13,7 +13,6 @@ function OpenWeather() {
                 .then(data => {
                     setWeather(data);
                     setQuery('');
-                    console.log(data);
                 });
         }
     }
