@@ -18,7 +18,7 @@ body {
 }
 
 .app {
-  background-image: url('./assets/weather/clouds.jpg');
+  background-image: url('./assets/weather/cloudy.jpg');
   background-size: cover;
   background-position: center;
   transition: 0.4 ease-out;
@@ -135,4 +135,18 @@ main {
   font-weight: 900;
   text-align: center;
   text-shadow: 1px 1px rgb(1, 1, 1);
+}
+
+.app.cat {
+  background-image: url('./assets/cats/coolcat.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.app.git {
+  background-image: url('./assets/github/githubhome.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }

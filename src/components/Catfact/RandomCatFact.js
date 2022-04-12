@@ -32,6 +32,7 @@ function RandomCatFact() {
             <hr />
             <button onClick={() => handleClick()}>Get Cat Fact</button>
             <p>{fact}</p>
+            <div className="app cat"></div>
         </div>
     )
 }

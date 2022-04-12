@@ -54,6 +54,7 @@ const GitHubData = () => {
                     onKeyPress={search}
                 />
             </div>
+            <div className="app git"></div>
             <div className='user-container'>
                 <h5 className='info-item'>{userData.name}</h5>
                 <h5 className='info-item'>{userData.location}</h5>
