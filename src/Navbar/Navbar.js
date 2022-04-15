@@ -31,11 +31,11 @@ const Navbar = (props) => {
                     textAlign: "right",
                 }}>
                     <NavButton to="/" label="Home " />
+                    <NavButton to="/news" label="News" />
                     <NavButton to="/weather" label="Weather" />
                     <NavButton to="/githubuser" label="GitHub" />
                     <NavButton to="/repo" label="Repo" />
                     <NavButton to="/catfact" label="Cat Facts" />
-                    <NavButton to="/news" label="News" />
                 </div>
             </div>
             <div style={{ height: "75px" }} />

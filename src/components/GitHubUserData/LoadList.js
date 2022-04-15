@@ -18,13 +18,16 @@ function LoadList() {
                 setListState({ loading: false, repos: repos });
             });
     }, [setListState]);
+
     return (
-        <div className="LoadList">
-            <div className="container">
-                <h1>My Repositories</h1>
-            </div>
-            <div className="repo-container">
-                <ListLoading isLoading={listState.loading} repos={listState.repos} />
+        <div className="app gitpage">
+            <div className="LoadList">
+                <div className="container">
+                    <h1>Get Repositories</h1>
+                </div>
+                <div className="repo-container">
+                    <ListLoading isLoading={listState.loading} repos={listState.repos} />
+                </div>
             </div>
             <footer>
                 <div className="footer">

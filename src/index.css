@@ -150,3 +150,11 @@ main {
   background-position: center;
   min-height: 100vh;
 }
+
+.app.gitpage {
+  background-image: url('./assets/github/githubpage.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+

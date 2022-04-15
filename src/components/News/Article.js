@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-const googleUrl = "https://google-news1.p.rapidapi.com/search?q=Covid&country=US&lang=en&source=cnn.com&limit=50&when=30d";
-
 const Article = () => {
     const [news, setNews] = useState('');
     const [data, setData] = useState([{}]);
@@ -29,14 +27,18 @@ const Article = () => {
 
 
     const getNewsWithFetch = async () => {
-        const res = await fetch(googleUrl);
+        const res = await fetch(`https://google-news1.p.rapidapi.com/search?q=${news}&country=US&lang=en&source=cnn.com&limit=50&when=30d`);
         const jsonData = await res.json();
         setData(jsonData);
     }
 
     return (
         <div>
-            <h1>Get the latest news</h1>
+            <h1 style={{
+                textAlign: 'center'
+            }}>
+                Get the latest news
+            </h1>
             <div className="search-box">
                 <input
                     type="text"
