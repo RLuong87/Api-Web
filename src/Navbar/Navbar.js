@@ -35,6 +35,7 @@ const Navbar = (props) => {
                     <NavButton to="/githubuser" label="GitHub" />
                     <NavButton to="/repo" label="Repo" />
                     <NavButton to="/catfact" label="Cat Facts" />
+                    <NavButton to="/news" label="News" />
                 </div>
             </div>
             <div style={{ height: "75px" }} />

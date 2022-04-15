@@ -11,8 +11,8 @@ const GitHubData = () => {
     //   getGitHubUserWithFetch();
     // })
 
-    const search = e => {
-        if (e.key == "Enter") {
+    const search = (e) => {
+        if (e.key === "Enter") {
             fetch(`https://api.github.com/users/${user}`)
                 .then(res => res.json())
                 .then(data => {
@@ -24,19 +24,20 @@ const GitHubData = () => {
     }
 
     useEffect(() => {
-        getGitHubUserWithAxios();
-    })
+        // getGitHubUserWithAxios();
+        getGitHubUserWithFetch();
+    }, [])
 
-    // const getGitHubUserWithFetch = async () => {
-    //     const response = await fetch(gitHubUrl);
-    //     const jsonData = await response.json();
-    //     setData(jsonData);
-    // };
+    const getGitHubUserWithFetch = async () => {
+        const response = await fetch(gitHubUrl);
+        const jsonData = await response.json();
+        setData(jsonData);
+    };
 
-    const getGitHubUserWithAxios = async () => {
-        const response = await axios.get(gitHubUrl);
-        setUser(response.data);
-    }
+    // const getGitHubUserWithAxios = async () => {
+    //     const response = await axios.get(gitHubUrl);
+    //     setUser(response.data);
+    // }
 
     return (
         <div className='App'>

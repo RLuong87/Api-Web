@@ -5,7 +5,7 @@ function WithListLoading(Component) {
         if (!isLoading) return <Component {...props} />;
         return (
             <p style={{ textAlign: 'center', fontSize: '30px' }}>
-                Fetching data
+                Loading...
             </p>
         )
     }

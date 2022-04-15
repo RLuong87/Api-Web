@@ -28,7 +28,7 @@ function LoadList() {
             </div>
             <footer>
                 <div className="footer">
-                    Built{' '}
+                    Built
                     <span role='img' aria-label='love'>
                     </span>{' '}
                     with
